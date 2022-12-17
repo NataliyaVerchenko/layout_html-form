@@ -46,9 +46,8 @@
         <label class="input-group" for="fullDateOfBirthday">
           Full date of birthday:
           <input
-            type="datetime"
+            type="date"
             name="fullDateOfBirthday"
-            placeholder="mm-dd-yyyy"
           >
         </label>
 
@@ -59,11 +58,12 @@
             name="term"
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset-group">
-        <legend>Registration</legend>
+        <legend>
+          Registration
+        </legend>
 
         <label class="input-group">
           E-mail:
@@ -84,14 +84,16 @@
             maxlength="9"
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset-group">
-        <legend>An interesting fact about you!</legend>
+        <legend>
+          An interesting fact about you!
+        </legend>
+
         <div class="input-group">
 
-          <label for="loveCats">
+          <label>
             Do you love cats?
             <input
               type="radio"
@@ -101,7 +103,7 @@
             Yes
           </label>
 
-          <label for="loveCats">
+          <label>
             <input
               type="radio"
               name="loveCats"
@@ -126,7 +128,6 @@
           <input
             type="time"
             name="timeToGoToBed"
-            value=" "
           >
         </label>
 
@@ -144,35 +145,39 @@
           <input
             type="range"
             name="rateOurWork"
+            min="1"
+            max="10"
           >
         </label>
-
       </fieldset>
 
       <fieldset class="fieldset-group">
-        <legend>Additional info:</legend>
+        <legend>
+          Additional info:
+        </legend>
 
-        <div class="input-group">
-          <label>
-            Comments:
-            <textarea name="comments"></textarea>
-          </label>
-        </div>
+        <label class="input-group">
+          Comments:
+          <textarea
+            name="comments"
+            minlength="50"
+            maxlength="200"
+          >
+          </textarea>
+        </label>
 
-        <div class="input-group">
-          <label>
-            Would you recommend us?
-            <select name="recommendUs">
-              <option value="yes">yes</option>
-              <option value="no">no</option>
-            </select>
-          </label>
-        </div>
-
+        <label class="input-group">
+          Would you recommend us?
+          <select name="recommendUs">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
       </fieldset>
 
-      <button type="submit">Submit</button>
-
+      <label class="fieldset-group">
+        <input type="submit" value="Submit">
+      </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
